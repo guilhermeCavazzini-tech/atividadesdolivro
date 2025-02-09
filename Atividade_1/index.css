@@ -58,16 +58,24 @@ body {
     animation: wave-border 10s infinite ;
     animation: wave-background 5s infinite; /* Cor de fundo ao passar o mouse */
   }
+  
+  .logo:hover{
+    border: none;
+  }
+  .logo{
+    border: none;}
 
-a{
+  a{
     height: 50px;
     align-content: center;
     text-align: center;
     color: white;
+    text-decoration: none;
 }
-p{ 
+p{ display: flex;
     font-size: 25px;
     margin: 10px;
+    align-items: center;
     }
 
 div{
@@ -82,6 +90,8 @@ div{
     font-style: normal;
     /*animation: wave-border 10s infinite ;*/
 }
+div:hover{
+  animation: wave-border 0.5s infinite ;}
 
 @keyframes wave-border{
     0% { border-color: #ff0000; } 
@@ -114,4 +124,14 @@ div{
     75% { background-color: #ffff00; } 
     100% { background-color: #ff00ff; } 
 }
+
+
+button{
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  border: none;
+  background-color: #0000ff;
+}
+
 

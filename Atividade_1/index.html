@@ -8,24 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <title>Jogos Desenvolvidos</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-          <a href="#">MEUS-JOGOS</a>
+        <div class="logo" style="display: flex;">
+          <img src="images/jogando-video-game.png" width="100">
+          <p>Meus Jogos</p>
         </div>
         <nav class="nav">
           <ul class="nav-list">
             <li><a href="dados/dados.html" class="nav-link">Dados</a></li>
-            <li><a href="#" class="nav-link">Jogo1</a></li>
-            <li><a href="#" class="nav-link">Jogo2</a></li>
+            <li><a href="pagina3/pagina3.html" class="nav-link">Jogo2</a></li>
             <li><a href="#" class="nav-link">Jogo3</a></li>
+            <li><a href="#" class="nav-link">Jogo4</a></li>
           </ul>
         </nav>
       </header>
-    <div class="conteiner"><p>O<a href="dados/dados.html">Jogo de dados</a>: uma rolagem de dados</p></div>
-    <div class="conteiner"><p>Jogo 2</p></div>
+      <script>
+        function navegar(){
+          window.location.href=link;
+        }
+      </script>
+    <div class="conteiner"><p>Jogo de Rolagem de Dados<button id="btnn_dados" onclick="navegar(link='dados/dados.html')">Jogar</button></p></div>
+    <div class="conteiner"><p>Jogo 2 <button onclick="navegar(link='pagina3/pagina3.html')">Jogar</button></p></div>
     <div class="conteiner"><p>Jogo 3</p></div>
     <div class="conteiner"><p>Jogo 4</p></div>
     <div class="conteiner"><p>Jogo 5</p></div>
