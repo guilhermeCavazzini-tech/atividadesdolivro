@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=casino" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=casino"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.png" type="image/x-icon" />
     <title>Jogos Desenvolvidos</title>
-</head>
-<body>
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="musica.mp3" type="audio/mpeg" />
+    </audio>
     <header class="header">
-        <div class="logo" style="display: flex;">
-          <img src="images/jogando-video-game.png" width="100">
-          <p>Meus Jogos</p>
-        </div>
-        <nav class="nav">
-          <ul class="nav-list">
-            <li><a href="dados/dados.html" class="nav-link">Dados</a></li>
-            <li><a href="pagina3/pagina3.html" class="nav-link">Jogo2</a></li>
-            <li><a href="#" class="nav-link">Jogo3</a></li>
-            <li><a href="#" class="nav-link">Jogo4</a></li>
-          </ul>
-        </nav>
-      </header>
-      <script>
-        function navegar(){
-          window.location.href=link;
-        }
-      </script>
-    <div class="conteiner"><p>Jogo de Rolagem de Dados<button id="btnn_dados" onclick="navegar(link='dados/dados.html')">Jogar</button></p></div>
-    <div class="conteiner"><p>Jogo 2 <button onclick="navegar(link='pagina3/pagina3.html')">Jogar</button></p></div>
-    <div class="conteiner"><p>Jogo 3</p></div>
-    <div class="conteiner"><p>Jogo 4</p></div>
-    <div class="conteiner"><p>Jogo 5</p></div>
-</body>
+      <div class="logo" style="display: flex">
+        <img src="images/jogando-video-game.png" width="100" />
+        <p>Meus Jogos</p>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="dados/dados.html" class="nav-link">Dados</a></li>
+          <li><a href="pagina3/pagina3.html" class="nav-link">Jogo2</a></li>
+          <li><a href="#" class="nav-link">Jogo3</a></li>
+          <li><a href="#" class="nav-link">Jogo4</a></li>
+        </ul>
+      </nav>
+    </header>
+    <script>
+      function navegar() {
+        window.location.href = link;
+      }
+    </script>
+    <div class="conteiner">
+      <p>Jogo de Rolagem de Dados</p>
+      <button class="btnjogar" onclick="navegar(link='dados/dados.html')">
+        Jogar
+      </button>
+    </div>
+    <div class="conteiner">
+      <p>Jogo 2</p>
+      <button class="btnjogar" onclick="navegar(link='pagina3/pagina3.html')">
+        Jogar
+      </button>
+    </div>
+    <div class="conteiner">
+      <p>Jogo 3</p>
+      <button class="btnjogar" onclick="navegar(link='pagina3/pagina3.html')">
+        Jogar
+      </button>
+    </div>
+    <div class="conteiner">
+      <p>Jogo 4</p>
+      <button class="btnjogar" onclick="navegar(link='pagina3/pagina3.html')">
+        Jogar
+      </button>
+    </div>
+    <div class="conteiner">
+      <p>Jogo 5</p>
+      <button class="btnjogar" onclick="navegar(link='pagina3/pagina3.html')">
+        Jogar
+      </button>
+    </div>
+  </body>
 </html>

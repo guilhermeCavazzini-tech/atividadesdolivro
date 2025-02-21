@@ -78,20 +78,9 @@ p{ display: flex;
     align-items: center;
     }
 
-div{
-    display: grid;
-    border: 4px solid black;
-    margin: 10px;
-    border-radius: 5px;
-    text-align: start;
-    height: 100px;
-    font-family: "Press Start 2P", serif;
-    font-weight: 400;
-    font-style: normal;
-    /*animation: wave-border 10s infinite ;*/
-}
 div:hover{
-  animation: wave-border 0.5s infinite ;}
+  animation: wave-border 0.5s infinite ;
+  }
 
 @keyframes wave-border{
     0% { border-color: #ff0000; } 
@@ -126,12 +115,40 @@ div:hover{
 }
 
 
-button{
-  border-radius: 5px;
-  width: 50px;
-  height: 20px;
+.btnjogar{
+  background-color: #400150;
+  height: 60px;
+  width: 300px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
   border: none;
-  background-color: #0000ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+  margin: 15px;
+}
+
+.btnjogar:hover {
+  background-color: #400150;
+  color: white; 
+  transform: scale(1.05); /* Aumenta o tamanho do botão ao passar o mouse */
 }
 
 
+.conteiner{
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 4px solid black;
+  margin: 10px;
+  border-radius: 5px;
+  text-align: start;
+  height: 100px;
+  font-family: "Press Start 2P", serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: space-between;
+  align-items: center;
+  /*animation: wave-border 10s infinite ;*/
+}

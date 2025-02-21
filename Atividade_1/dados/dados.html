@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dados/dados.css">
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <Title>Jogo de dados</Title>
-    </head>
-    <body>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dados/dados.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../images/favicon.png" type="image/x-icon" />
+    <link rel="js" href="./dados.js" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Jogo de dados</title>
+  </head>
+  <body>
+    <div><h1>Gire os Dados</h1></div>
 
-        <div><h1>Gire os Dados</h1></div>
-
-        <div>
-        <canvas id="dados1"></canvas>
-        
-        <canvas id="dados2"></canvas>
-        </div>
-        <br>
-        <div>
-        <button onclick="numero+1">GIRAR DADOS</button>
-        </div>
-        <hr>
-        <br>
+    <div>
+      <canvas id="dados1" width="200" height="200"></canvas>
+      <canvas id="dados2" width="200" height="200"></canvas>
+    </div>
+    <br />
+    <div>
+      <button onclick="sorteio()">GIRAR DADOS</button>
+    </div>
+    <hr />
+    <br />
     <a href="../index.html">voltar</a>
-        <table>
-            <tr>
-            <th>Ganhos</th>
-            <th>Perdas</th>
-            </tr>
-            <tr>
-            <td>10</td>
-            <td>15</td>
-            </tr>
-        </table>
-        
-    </body>
+    <table>
+      <tr>
+        <th>Ganhos</th>
+        <th>Perdas</th>
+      </tr>
+      <tr>
+        <td>x</td>
+        <td>y</td>
+      </tr>
+    </table>
+
+    <script src="dados.js" type="text/javascript"></script>
+  </body>
 </html>
