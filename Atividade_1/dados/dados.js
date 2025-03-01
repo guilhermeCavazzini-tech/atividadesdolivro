@@ -63,6 +63,6 @@ function sorteio() {
 }
 
 window.onload = function () {
-  desenharPontos(ctx1, pontosDados[4]);
-  desenharPontos(ctx2, pontosDados[6]);
+  desenharPontos(ctx1, pontosDados[0]);
+  desenharPontos(ctx2, pontosDados[0]);
 };
